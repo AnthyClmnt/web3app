@@ -38,7 +38,6 @@ function Home() {
 
   const getCount = async () => {
     const count = await contract.count();
-    console.log(parseInt(count));
     setTotalMinted(parseInt(count));
   };
   
@@ -70,9 +69,9 @@ function Home() {
             transform: `translateY(${offset * 0.05}px)`,
           }}
         />
+        <WalletBalance />
       </section>
-      
-      <WalletBalance />
+    
 
       {Array(totalMinted + 1)
       .fill(0)
@@ -112,7 +111,6 @@ function NFTImage({ tokenId, getCount }) {
       
       getMintedStatus();
       getCount();
-      console.log(getCount)
     };
   
     async function getURI() {

@@ -15,7 +15,7 @@ function WalletBalance() {
     return (
       <div>
           <h5>Your Balance: {balance}</h5>
-          <button onClick={() => getBalance()}>Show My Balance</button>
+          <button onClick={() => getBalance()}>connect Wallet</button>
       </div>
     );
   };

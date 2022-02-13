@@ -41,12 +41,7 @@ function Home() {
     console.log(parseInt(count));
     setTotalMinted(parseInt(count));
   };
-
-  function Component() {
-    const { ref } = useParallax<HTMLDivElement>({ speed: 10 });
-    return <div ref={ref} />;
-  }
-
+  
   return (
     <div>
       <section>
